@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>DanceStudio | Танцевальная студия в Ставрополе</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header class="header header-transparent" id="header">
+        <div class="container header-inner">
+            <a href="#hero" class="logo" id="logoLink">DanceStudio</a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="#hero" class="nav-link nav-link-transparent" data-nav="hero">Главная</a>
+                <a href="#about" class="nav-link nav-link-transparent" data-nav="about">О студии</a>
+                <a href="#directions" class="nav-link nav-link-transparent" data-nav="directions">Направления</a>
+                <a href="#trainers" class="nav-link nav-link-transparent" data-nav="trainers">Преподаватели</a>
+                <a href="#contacts" class="nav-link nav-link-transparent" data-nav="contacts">Контакты</a>
+            </nav>
+
+            <div class="header-controls">
+                <button class="icon-btn" id="favBtn" aria-label="Избранное">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                    </svg>
+                    <span id="favCount" class="fav-badge">0</span>
+                </button>
+                <button class="icon-btn" id="themeToggle" aria-label="Смена темы">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="4"/>
+                        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+                    </svg>
+                </button>
+                <button class="icon-btn" id="menuBtn" aria-label="Меню">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Мобильное меню навигации -->
+    <div id="mobileMenu" class="mobile-menu">
+        <nav class="container mobile-nav-container">
+            <a href="#hero" class="nav-link" data-nav="hero">Главная</a>
+            <a href="#about" class="nav-link" data-nav="about">О студии</a>
+            <a href="#directions" class="nav-link" data-nav="directions">Направления</a>
+            <a href="#trainers" class="nav-link" data-nav="trainers">Преподаватели</a>
+            <a href="#contacts" class="nav-link" data-nav="contacts">Контакты</a>
+        </nav>
+    </div>
+
+    <!-- Основной контент -->
+    <main>
+        <!-- Главный экран -->
+        <section id="hero" class="hero">
+            <div class="hero-bg">
+                <img src="images/hero/hero-bg.jpg" alt="Танцевальное выступление студии">
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <p class="hero-badge">ПРОФЕССИОНАЛЬНАЯ ТАНЦЕВАЛЬНАЯ СТУДИЯ · СТАВРОПОЛЬ</p>
+                <h1 class="hero-title">Dance<span>Studio</span></h1>
+                <p class="hero-subtitle">Откройте в себе танцора. 10+ направлений, профессиональные педагоги и атмосфера, которая вдохновляет с первого занятия.</p>
+                <div class="hero-actions">
+                    <a href="#contacts" class="btn-primary" id="heroOrderBtn">Записаться на пробный урок</a>
+                    <a href="#directions" class="btn-outline" id="heroExploreBtn">Смотреть направления</a>
+                </div>
+            </div>
+            <div class="scroll-down-indicator">
+                <span class="scroll-text">ЛИСТАТЬ</span>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <!-- О студии -->
+        <section id="about">
+            <div class="container">
+                <p class="section-badge">О НАС</p>
+                <h2 class="section-title">О студии</h2>
+                
+                <div class="about-description">
+                    <p>DanceStudio — пространство, где рождается движение. Мы работаем с 2019 года и за это время воспитали сотни учеников: от совершенных новичков до призёров международных фестивалей.</p>
+                    <p>Наша миссия — сделать танец доступным для каждого. Неважно, сколько вам лет и есть ли опыт. Здесь вы найдёте своё направление, своих людей и ритм, который станет частью вашей жизни.</p>
+                </div>
+
+                <div class="advantages-grid">
+                    <div class="advantage-card">
+                        <h3>Профессионализм</h3>
+                        <p>Педагоги с международным опытом</p>
+                    </div>
+                    <div class="advantage-card">
+                        <h3>Дружеская атмосфера</h3>
+                        <p>Сообщество, где поддерживают</p>
+                    </div>
+                    <div class="advantage-card">
+                        <h3>Индивидуальный подход</h3>
+                        <p>Программы для любого уровня</p>
+                    </div>
+                    <div class="advantage-card">
+                        <h3>Современные залы</h3>
+                        <p>600 м² профессиональных покрытий</p>
+                    </div>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <p class="stat-number">5</p>
+                        <p class="stat-label">лет на рынке</p>
+                    </div>
+                    <div class="stat-card">
+                        <p class="stat-number">10+</p>
+                        <p class="stat-label">направлений</p>
+                    </div>
+                    <div class="stat-card">
+                        <p class="stat-number">300+</p>
+                        <p class="stat-label">учеников</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Направления танцев -->
+        <section id="directions" class="bg-muted">
+            <div class="container">
+                <p class="section-badge">ЧТО МЫ ПРЕПОДАЁМ</p>
+                <h2 class="section-title">Направления танцев</h2>
+                
+                <div class="filter-toolbar">
+                    <div class="filter-group">
+                        <button class="filter-btn active" data-filter="all">Все</button>
+                        <button class="filter-btn" data-filter="adults">Для взрослых</button>
+                        <button class="filter-btn" data-filter="children">Для детей</button>
+                    </div>
+                    <div class="search-wrapper">
+                        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                        </svg>
+                        <input type="text" id="searchInput" class="search-input" placeholder="Поиск направления...">
+                    </div>
+                </div>
+                
+                <div id="directionsGrid" class="directions-grid"></div>
+            </div>
+        </section>
+
+        <!-- Преподаватели -->
+        <section id="trainers">
+            <div class="container">
+                <p class="section-badge">НАША КОМАНДА</p>
+                <h2 class="section-title">Преподаватели</h2>
+                <div id="trainersGrid" class="trainers-grid"></div>
+            </div>
+        </section>
+
+        <!-- Контакты и запись -->
+        <section id="contacts" class="bg-muted">
+            <div class="container">
+                <p class="section-badge">СВЯЖИТЕСЬ С НАМИ</p>
+                <h2 class="section-title">Контакты и запись</h2>
+                
+                <div class="contacts-layout">
+                    
+                    <div class="contacts-info">
+                        <div class="contacts-list">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3>Адрес</h3>
+                                    <p>г. Ставрополь, ул. Ленина, д. 15, 3-й этаж</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3>Телефон</h3>
+                                    <a href="tel:+78651234567">+7 (865) 123-45-67</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                        <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 7L2 7"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3>Email</h3>
+                                    <a href="mailto:hello@dancestudio.ru">hello@dancestudio.ru</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-card">
+                        <h3>Записаться на занятие</h3>
+                        <form id="contactForm" novalidate>
+                            <div class="form-group">
+                                <label for="formName">Имя <span class="required">*</span></label>
+                                <input type="text" id="formName" class="form-input" placeholder="Ваше имя">
+                                <div id="nameError" class="error-message"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="formPhone">Телефон <span class="required">*</span></label>
+                                <input type="tel" id="formPhone" class="form-input" placeholder="+7 (___) ___-__-__">
+                                <div id="phoneError" class="error-message"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="formDirection">Направление</label>
+                                <select id="formDirection" class="form-select">
+                                    <option value="">Не выбрано</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn-primary btn-block">Отправить заявку</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 DanceStudio. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <!-- Боковая панель избранного -->
+    <div id="favOverlay" class="fav-overlay"></div>
+    <aside id="favPanel" class="fav-panel" aria-labelledby="favPanelTitle">
+        <div class="fav-panel-header">
+            <h3 id="favPanelTitle">Избранное <span id="favPanelCount"></span></h3>
+            <button id="closeFavPanel" class="close-panel-btn" aria-label="Закрыть панель избранного">✕</button>
+        </div>
+        <div id="favList" class="fav-panel-content"></div>
+        <div id="favFooter" class="fav-panel-footer">
+            <button id="favBookingBtn" class="btn-primary btn-block">Записаться на выбранное</button>
+        </div>
+    </aside>
+
+        <!-- 1. Данные (подключаются первыми, так как классы обращаются к ним при инициализации) -->
+    <script src="data/directions.js"></script>
+    <script src="data/trainers.js"></script>
+
+    <!-- 2. Классы (каждый в отдельном файле, порядок важен: сначала базовые сущности, затем зависящие от них) -->
+    <script src="classes/DanceDirection.js"></script>
+    <script src="classes/FavoritesManager.js"></script>
+    <script src="classes/ThemeManager.js"></script>
+    <script src="classes/FormValidator.js"></script>
+    <script src="classes/AppController.js"></script>
+
+    <!-- 3. Точка входа (запускается последней, когда всё остальное уже загружено) -->
+    <script src="main.js"></script>
+</body>
+</html>
