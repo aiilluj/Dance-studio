@@ -9,7 +9,6 @@
 </head>
 <body>
 
-    <!-- Шапка сайта -->
     <header class="header header-transparent" id="header">
         <div class="container header-inner">
             <a href="#hero" class="logo" id="logoLink">DanceStudio</a>
@@ -44,7 +43,6 @@
         </div>
     </header>
 
-    <!-- Мобильное меню навигации -->
     <div id="mobileMenu" class="mobile-menu">
         <nav class="container mobile-nav-container">
             <a href="#hero" class="nav-link" data-nav="hero">Главная</a>
@@ -55,7 +53,6 @@
         </nav>
     </div>
 
-    <!-- Основной контент -->
     <main>
         <!-- Главный экран -->
         <section id="hero" class="hero">
@@ -78,7 +75,6 @@
             </div>
         </section>
 
-        <!-- О студии -->
         <section id="about">
             <div class="container">
                 <p class="section-badge">О НАС</p>
@@ -125,7 +121,6 @@
             </div>
         </section>
 
-        <!-- Направления танцев -->
         <section id="directions" class="bg-muted">
             <div class="container">
                 <p class="section-badge">ЧТО МЫ ПРЕПОДАЁМ</p>
@@ -149,7 +144,6 @@
             </div>
         </section>
 
-        <!-- Преподаватели -->
         <section id="trainers">
             <div class="container">
                 <p class="section-badge">НАША КОМАНДА</p>
@@ -158,7 +152,6 @@
             </div>
         </section>
 
-        <!-- Контакты и запись -->
         <section id="contacts" class="bg-muted">
             <div class="container">
                 <p class="section-badge">СВЯЖИТЕСЬ С НАМИ</p>
@@ -232,7 +225,6 @@
         </section>
     </main>
 
-    <!-- Подвал -->
     <footer class="footer">
         <div class="container">
             <p>© 2026 DanceStudio. Все права защищены.</p>
@@ -252,17 +244,15 @@
         </div>
     </aside>
 
-        <!-- 1. Данные (подключаются первыми, так как классы обращаются к ним при инициализации) -->
     <script src="data/directions.js"></script>
     <script src="data/trainers.js"></script>
 
-    <!-- 2. Классы (каждый в отдельном файле, порядок важен: сначала базовые сущности, затем зависящие от них) -->
     <script src="classes/DanceDirection.js"></script>
     <script src="classes/FavoritesManager.js"></script>
     <script src="classes/ThemeManager.js"></script>
     <script src="classes/FormValidator.js"></script>
     <script src="classes/AppController.js"></script>
 
-
+    <script src="main.js"></script>
 </body>
 </html>
