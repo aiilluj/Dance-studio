@@ -496,9 +496,75 @@ section { padding: 5rem 0; }
 .no-results { text-align: center; padding: 3rem 1rem; grid-column: 1 / -1; }
 .no-results-btn { margin-top: 1rem; color: var(--muted-foreground); background: none; border: none; cursor: pointer; text-decoration: underline; font-size: 0.875rem; }
 
-/* ========== Адаптивность ========== */
+/* ========== Адаптивность и исправления для мобильных ========== */
 @media (max-width: 1023px) {
     #menuBtn {
         display: inline-flex;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Запрет горизонтального скролла */
+    body, section, .container {
+        overflow-x: hidden;
+    }
+    
+    body {
+        width: 100%;
+    }
+    
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    /* Секция "О студии" */
+    #about .container {
+        overflow-x: hidden;
+    }
+    
+    .about-description p {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+    
+    /* Сетка преимуществ — строго одна колонка */
+    .advantages-grid {
+        grid-template-columns: 1fr !important;
+        gap: 0.75rem;
+    }
+    
+    .advantage-card {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 1rem;
+    }
+    
+    /* Статистика — на маленьких экранах одна колонка */
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+    
+    /* Планшеты: статистика в две колонки */
+    @media (min-width: 480px) and (max-width: 768px) {
+        .stats-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    
+    /* Общие фиксы */
+    .section-title {
+        font-size: 1.75rem;
+        word-break: break-word;
+    }
+    
+    .form-card {
+        padding: 1.25rem;
+    }
+    
+    .fav-panel {
+        width: 100%;
+        max-width: 100%;
     }
 }
