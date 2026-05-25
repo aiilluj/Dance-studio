@@ -496,7 +496,7 @@ section { padding: 5rem 0; }
 .no-results { text-align: center; padding: 3rem 1rem; grid-column: 1 / -1; }
 .no-results-btn { margin-top: 1rem; color: var(--muted-foreground); background: none; border: none; cursor: pointer; text-decoration: underline; font-size: 0.875rem; }
 
-/* ========== Адаптивность и исправления для мобильных ========== */
+/* ========== Адаптивность ========== */
 @media (max-width: 1023px) {
     #menuBtn {
         display: inline-flex;
@@ -528,7 +528,7 @@ section { padding: 5rem 0; }
         overflow-wrap: break-word;
     }
     
-    /* Сетка преимуществ — строго одна колонка */
+    /* Сетка преимуществ — одна колонка */
     .advantages-grid {
         grid-template-columns: 1fr !important;
         gap: 0.75rem;
@@ -540,17 +540,75 @@ section { padding: 5rem 0; }
         padding: 1rem;
     }
     
-    /* Статистика — на маленьких экранах одна колонка */
+    /* Статистика */
     .stats-grid {
         grid-template-columns: 1fr;
         gap: 0.75rem;
     }
     
-    /* Планшеты: статистика в две колонки */
     @media (min-width: 480px) and (max-width: 768px) {
         .stats-grid {
             grid-template-columns: repeat(2, 1fr);
         }
+    }
+    
+    /* Сетки карточек — одна колонка */
+    .directions-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1rem;
+    }
+    
+    .trainers-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1rem;
+    }
+    
+    /* Карточки */
+    .direction-card,
+    .trainer-card {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+    
+    /* Изображения направлений (горизонтальные) */
+    .card-img-wrapper {
+        height: auto;
+    }
+    
+    .card-img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        aspect-ratio: 16 / 10;
+    }
+    
+    /* Изображения преподавателей (вертикальные портреты) */
+    .trainer-img-wrapper {
+        height: auto;
+    }
+    
+    .trainer-img-wrapper img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        aspect-ratio: 3 / 4;
+    }
+    
+    /* Текст в карточках */
+    .card-body {
+        padding: 1rem;
+    }
+    
+    .card-body h3 {
+        font-size: 1.1rem;
+        word-break: break-word;
+    }
+    
+    .description,
+    .trainer-bio {
+        font-size: 0.75rem;
+        word-break: break-word;
     }
     
     /* Общие фиксы */
@@ -566,96 +624,5 @@ section { padding: 5rem 0; }
     .fav-panel {
         width: 100%;
         max-width: 100%;
-    }
-}
-@media (max-width: 768px) {
-    .directions-grid {
-        grid-template-columns: 1fr !important;
-        gap: 1rem;
-    }
-    
-    .trainers-grid {
-        grid-template-columns: 1fr !important;
-        gap: 1rem;
-    }
-    
-    .direction-card,
-    .trainer-card {
-        width: 100%;
-        max-width: 100%;
-        overflow: hidden;
-    }
-    
-    .card-img,
-    .trainer-img-wrapper img {
-        width: 100%;
-        height: auto;
-        max-width: 100%;
-    }
-    
-    .card-body {
-        padding: 1rem;
-    }
-    
-    .card-body h3 {
-        font-size: 1.1rem;
-        word-break: break-word;
-    }
-    
-    .description {
-        word-break: break-word;
-    }
-}
-@media (max-width: 768px) {
-    .directions-grid {
-        grid-template-columns: 1fr !important;
-        gap: 1rem;
-    }
-
-    .trainers-grid {
-        grid-template-columns: 1fr !important;
-        gap: 1rem;
-    }
-
-    .direction-card,
-    .trainer-card {
-        width: 100%;
-        max-width: 100%;
-        overflow: hidden;
-    }
-
-    .card-img {
-        width: 100%;
-        height: auto;
-        max-width: 100%;
-        aspect-ratio: 4 / 3;
-        object-fit: cover;
-    }
- 
-    .trainer-img-wrapper {
-        height: auto !important;
-        max-height: 280px;
-    }
-    
-    .trainer-img-wrapper img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        aspect-ratio: 3 / 4;
-    }
- 
-    .card-body {
-        padding: 1rem;
-    }
-    
-    .card-body h3 {
-        font-size: 1.1rem;
-        word-break: break-word;
-    }
-    
-    .description,
-    .trainer-bio {
-        font-size: 0.75rem;
-        word-break: break-word;
     }
 }
