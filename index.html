@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>DanceStudio | Танцевальная студия в Ставрополе</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%23581C28'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-size='36' font-family='serif' fill='%23D4AF37'>D</text></svg>">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Шапка сайта -->
     <header class="header header-transparent" id="header">
         <div class="container header-inner">
             <a href="#hero" class="logo" id="logoLink">DanceStudio</a>
@@ -43,6 +45,7 @@
         </div>
     </header>
 
+    <!-- Мобильное меню навигации -->
     <div id="mobileMenu" class="mobile-menu">
         <nav class="container mobile-nav-container">
             <a href="#hero" class="nav-link" data-nav="hero">Главная</a>
@@ -53,6 +56,7 @@
         </nav>
     </div>
 
+    <!-- Основной контент -->
     <main>
         <!-- Главный экран -->
         <section id="hero" class="hero">
@@ -75,6 +79,7 @@
             </div>
         </section>
 
+        <!-- О студии -->
         <section id="about">
             <div class="container">
                 <p class="section-badge">О НАС</p>
@@ -121,6 +126,7 @@
             </div>
         </section>
 
+        <!-- Направления танцев -->
         <section id="directions" class="bg-muted">
             <div class="container">
                 <p class="section-badge">ЧТО МЫ ПРЕПОДАЁМ</p>
@@ -144,6 +150,7 @@
             </div>
         </section>
 
+        <!-- Преподаватели -->
         <section id="trainers">
             <div class="container">
                 <p class="section-badge">НАША КОМАНДА</p>
@@ -152,6 +159,7 @@
             </div>
         </section>
 
+        <!-- Контакты и запись -->
         <section id="contacts" class="bg-muted">
             <div class="container">
                 <p class="section-badge">СВЯЖИТЕСЬ С НАМИ</p>
@@ -225,6 +233,7 @@
         </section>
     </main>
 
+    <!-- Подвал -->
     <footer class="footer">
         <div class="container">
             <p>© 2026 DanceStudio. Все права защищены.</p>
@@ -244,15 +253,18 @@
         </div>
     </aside>
 
+        <!-- 1. Данные (подключаются первыми, так как классы обращаются к ним при инициализации) -->
     <script src="data/directions.js"></script>
     <script src="data/trainers.js"></script>
 
+    <!-- 2. Классы (каждый в отдельном файле, порядок важен: сначала базовые сущности, затем зависящие от них) -->
     <script src="classes/DanceDirection.js"></script>
     <script src="classes/FavoritesManager.js"></script>
     <script src="classes/ThemeManager.js"></script>
     <script src="classes/FormValidator.js"></script>
     <script src="classes/AppController.js"></script>
 
+    <!-- 3. Точка входа (запускается последней, когда всё остальное уже загружено) -->
     <script src="main.js"></script>
 </body>
 </html>
