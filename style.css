@@ -568,3 +568,41 @@ section { padding: 5rem 0; }
         max-width: 100%;
     }
 }
+@media (max-width: 768px) {
+    .directions-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1rem;
+    }
+    
+    .trainers-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1rem;
+    }
+    
+    .direction-card,
+    .trainer-card {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+    
+    .card-img,
+    .trainer-img-wrapper img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+    
+    .card-body h3 {
+        font-size: 1.1rem;
+        word-break: break-word;
+    }
+    
+    .description {
+        word-break: break-word;
+    }
+}
